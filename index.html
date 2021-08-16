@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <title>Wireframe Trial on Netlify</title>
+    <link rel="stylesheet" href="style.CSS" />
+  </head>
+  <div class="container">
+    <body>
+      <h1>
+        <div class="container1">
+          <ul class="border border-info rounded-pill">
+            <li>☀️</li>
+            <li>
+              <a id="temp-now"> 35ºC </a>
+              <div class="row">
+                <div class="col">
+                  <div class="minmax fs-5 lh-sm text-primary">
+                    <a id="sub-temp"> 38˚C/23˚C </a>
+                    <div class="rain fs-6 lh-sm text-success">
+                      Precipitation 15% <br />
+                      Humidity 30%
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </li>
+            <li>
+              <span class="mainLoc" id="main-loc">
+                Monterrey, <br />
+                Mexico
+              </span>
+            </li>
+          </ul>
+        </div>
+        <button id="button-currentLoc" class="buttonCL">
+          Current Location
+        </button>
+      </h1>
+      <hr />
+      <div class="container2">
+        <ul class="list-group list-group-horizontal">
+          <li class="list-group-item fs-2 flex-fill">☀️</li>
+          <li class="list-group-item fst-italic flex-fill">Tuesday</li>
+          <li class="list-group-item flex-fill">33˚C / 23˚C</li>
+          <li class="list-group-item flex-fill">
+            Precipitation 10% <br />Humidity 20%
+          </li>
+        </ul>
+        <ul class="list-group list-group-horizontal">
+          <li class="list-group-item fs-2 flex-fill">🌧</li>
+          <li class="list-group-item fst-italic flex-fill">Wednesday</li>
+          <li class="list-group-item flex-fill">30˚C / 20˚C</li>
+          <li class="list-group-item flex-fill">
+            Precipitation 60% <br />
+            Humidity 50%
+          </li>
+        </ul>
+        <ul class="list-group list-group-horizontal">
+          <li class="list-group-item fs-2 flex-fill">☁️</li>
+          <li class="list-group-item fst-italic flex-fill">Thursday</li>
+          <li class="list-group-item flex-fill">34˚C / 23˚C</li>
+          <li class="list-group-item flex-fill">
+            Precipitation 30% <br />
+            Humidity 20%
+          </li>
+        </ul>
+        <ul class="list-group list-group-horizontal">
+          <li class="list-group-item fs-2 flex-fill">🌤</li>
+          <li class="list-group-item fst-italic flex-fill">Friday</li>
+          <li class="list-group-item flex-fill">36˚C / 20˚C</li>
+          <li class="list-group-item flex-fill">
+            Precipitation 15% <br />
+            Humidity 40%
+          </li>
+        </ul>
+        <ul class="list-group list-group-horizontal">
+          <li class="list-group-item fs-2">☁️</li>
+          <li class="list-group-item fst-italic">Saturday</li>
+          <li class="list-group-item">28˚C / 19˚C</li>
+          <li class="list-group-item flex-fill">
+            Precipitation 30% <br />
+            Humidity 20%
+          </li>
+        </ul>
+      </div>
+
+      <div class="row pt-3 pb-3 px-5 mt-3 mb-5">
+        <div class="col"></div>
+        <div class="col"></div>
+        <div class="col">
+          <form id="search-form">
+            <div class="mb-3">
+              <input
+                type="search"
+                id="search-input"
+                class="form-control"
+                placeholder="Search for other cities"
+                autocomplete="off"
+                autofocus="on"
+              />
+              <input type="submit" value="Search" class="searchButton" />
+            </div>
+            <button type="submit" class="btn btn-info">Tokyo</button>
+            <button type="button" class="btn btn-info">NYC</button>
+            <button type="button" class="btn btn-info">Paris</button>
+            <button type="button" class="btn btn-info">Mumbai</button>
+          </form>
+        </div>
+      </div>
+
+      <div class="topheaders">
+        <div class="tempConv" id="temp-conv">
+          <a href="#" id="celsius"> C˚</a>|<a href="#" id="faren"> F˚</a>
+        </div>
+        <div class="currentTime">
+          <p>
+            <span id="current-time"> </span>
+          </p>
+        </div>
+      </div>
+      <script type="text/javascript" src="script.js"></script>
+    </body>
+  </div>
+</html>
